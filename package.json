@@ -1,0 +1,14 @@
+{
+  "name": "kakeibo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --outfile=dist/main.js --watch --sourcemap",
+    "build": "esbuild src/main.ts --bundle --outfile=dist/main.js --minify",
+    "serve": "npx http-server . -p 3000 -o"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.0",
+    "typescript": "^5.3.0"
+  }
+}
